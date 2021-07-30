@@ -25,9 +25,28 @@ body {
 }
 
 #user-list li {
+	position: relative;
+	display: flex;
 	padding: 10px 5px;
+	align-items: center;
+	justify-content: space-between;
 }
 
 #user-list li:hover {
 	background-color: #cccccc;
+}
+
+.orange {
+	color: #f3863e;
+}
+
+.purple {
+	color: rgb(151 5 151 / 55%);
+}
+
+#id {
+	margin: 30px auto;
+	padding: 10px 10px;
+	border: none;
+	border-bottom: 3px solid #cccccc;
 }
