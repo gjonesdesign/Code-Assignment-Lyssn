@@ -29,11 +29,13 @@ function display(user_array) {
 
 function display_id(id) {
 	if (document.getElementById("id")) {
-		user_list.removeChild(document.getElementById("id"));
+		var dialog_box = document.getElementById("id");
+		dialog_box.innerHTML = "<p>User ID: " + id + "</p>";
+	} else {
+		var dialog_box = document.createElement("dialog");
+		dialog_box.id = "id";
+		dialog_box.setAttribute("open", "");
+		dialog_box.innerHTML = "<p>User ID: " + id + "</p>";
+		user_list.appendChild(dialog_box);
 	}
-	var dialog_box = document.createElement("dialog");
-	dialog_box.id = "id";
-	dialog_box.setAttribute("open", "");
-	dialog_box.innerHTML = "<p>User ID: " + id + "</p>";
-	user_list.appendChild(dialog_box);
 }
