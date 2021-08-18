@@ -1,4 +1,4 @@
-# Code-Assignment-Lyssn
+# User List Demo Website
  Site user list via Javascript  and JSON
 
 # Description
